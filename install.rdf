@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+
+   <em:id>betterfindbutton@betterfindbutton.bfb</em:id>
+   <em:name>Better FindButton</em:name>
+   <em:version>1.0</em:version>
+   <em:description>Find Button will be able to open AND TO CLOSE findbar.</em:description>
+   <em:creator>Mish12</em:creator>
+   <em:type>2</em:type>
+   <em:bootstrap>true</em:bootstrap>
+   <em:unpack>false</em:unpack>
+   <em:multiprocessCompatible>true</em:multiprocessCompatible>
+   <em:homepageURL>https://github.com/Mikhail-M12/Better-FindButton</em:homepageURL>
+	
+   <em:targetApplication><!-- Firefox/Waterfox/Basilisk -->
+	<Description>
+		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+		<em:minVersion>29.0</em:minVersion>
+		<em:maxVersion>*</em:maxVersion><!-- 85.0a - works -->
+	</Description>
+   </em:targetApplication>
+
+   <em:localized>
+	<Description>
+		<em:locale>en-US</em:locale>
+		<em:name>Better FindButton</em:name>
+		<em:description>Find Button will be able to open AND TO CLOSE findbar.</em:description>
+		<em:creator>Mish12</em:creator>
+	</Description>
+   </em:localized>
+
+   <em:localized>
+	<Description>
+		<em:locale>ru</em:locale>
+		<em:name>Better FindButton</em:name>
+		<em:description>Кнопка поиска будет способна открывать И ЗАКРЫВАТЬ панель поиска.</em:description>
+		<em:creator>Mish12</em:creator>
+	</Description>
+   </em:localized>
+
+   <em:localized>
+	<Description>
+		<em:locale>ja</em:locale>
+		<em:name>Better FindButton</em:name>
+		<em:description>検索のボタンは検索バーを開く事も閉じる事もが出来る。</em:description>
+		<em:creator>Mish12</em:creator>
+	</Description>
+   </em:localized>
+
+  </Description>
+
+</RDF>
