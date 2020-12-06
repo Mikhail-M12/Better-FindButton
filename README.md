@@ -11,12 +11,13 @@ English version of text is below.
 
       УСТАНОВКА</br>
  Настройки, которые должны быть в about:config перед установкой аддона:</br>
-  xpinstall.signatures.required = false</br>
-  extensions.legacy.enabled = true – для Firefox <=73, Waterfox, Waterfox Classic, Waterfox Current</br>
-  extensions.experiments.enabled = true – для Firefox 74+, Waterfox G3</br>
- В Firefox 65+ перед установкой нужно ещё установить аддон bootstrap loader: https://github.com/xiaoxiaoflood/firefox-scripts/tree/master/extensions/bootstrapLoader
+  <b>xpinstall.signatures.required = false</b></br>
+  <b>extensions.legacy.enabled = true</b> – для Firefox <=73, Waterfox, Waterfox Classic, Waterfox Current</br>
+  <b>extensions.experiments.enabled = true</b> – для Firefox 74+, Waterfox G3</br>
+ В Firefox 65+ перед установкой нужно ещё установить <b>аддон bootstrap loader</b>: https://github.com/xiaoxiaoflood/firefox-scripts/tree/master/extensions/bootstrapLoader
 
- Перед установкой Better FindButton разместите кнопку поиска на панели инструментов. Далее для установки скачайте xpi-файл и откройте его в браузере.
+ Перед установкой Better FindButton разместите кнопку поиска на панели инструментов. Далее для установки скачайте xpi-файл (https://github.com/Mikhail-M12/Better-FindButton/releases/download/v1.0/betterfindbutton.xpi ) и откройте его в браузере.
+
 
 \*1 Или используйте спец. конфигурацию для отключения проверки подписей аддонов: https://forum.mozilla-russia.org/viewtopic.php?id=70326</br>
 \*2 Или специальную инсталляцию аддона: https://www.ggbs.de/extensions/Firefox.html
@@ -32,12 +33,13 @@ Supported browsers:
 
       INSTALLATION</br>
  about:config entries must be set before install:</br>
-  xpinstall.signatures.required = false</br>
-  extensions.legacy.enabled = true – for Firefox <=73, Waterfox, Waterfox Classic, Waterfox Current</br>
-  extensions.experiments.enabled = true – for Firefox 74+, Waterfox G3</br>
- In Firefox 65+ bootstrap loader addon must be installed: https://github.com/xiaoxiaoflood/firefox-scripts/tree/master/extensions/bootstrapLoader
+  <b>xpinstall.signatures.required = false</b></br>
+  <b>extensions.legacy.enabled = true</b> – for Firefox <=73, Waterfox, Waterfox Classic, Waterfox Current</br>
+  <b>extensions.experiments.enabled = true</b> – for Firefox 74+, Waterfox G3</br>
+ In Firefox 65+ <b>bootstrap loader addon</b> must be installed: https://github.com/xiaoxiaoflood/firefox-scripts/tree/master/extensions/bootstrapLoader
 
- Before installing Better FindButton place find button onto toolbar. Then for installation download xpi-file and open it in browser.
+ Before installing Better FindButton place find button onto toolbar. Then for installation download xpi-file (https://github.com/Mikhail-M12/Better-FindButton/releases/download/v1.0/betterfindbutton.xpi ) and open it in browser.
+
 
 \*1 Or use special configuration for disabling of addon signature checking: https://forum.mozilla-russia.org/viewtopic.php?id=70326</br>
 \*2 Or special installation of addon: https://www.ggbs.de/extensions/Firefox.html
