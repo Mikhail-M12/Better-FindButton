@@ -4,7 +4,7 @@ English version of text is below.
 Аддон для Firefox/Waterfox/Basilisk, улучшающий кнопку поиска: она будет способна открывать И ЗАКРЫВАТЬ панель поиска.
 Поддерживаемые браузеры:
 - Firefox 29+ \[\*1\];
-- Waterfox 30-56; Waterfox Classic; Waterfox Current/G3/G4;
+- Waterfox 30-56; Waterfox Classic; Waterfox Current/G3/G4/G5;
 - Basilisk.
 
       **УСТАНОВКА**</br>
@@ -30,14 +30,14 @@ English version of text is below.
 Addon for Firefox/Waterfox/Basilisk that improves find button: it will be able to open AND TO CLOSE findbar.
 Supported browsers:
 - Firefox 29+ \[\*1\];
-- Waterfox 30-56; Waterfox Classic; Waterfox Current/G3/G4;
+- Waterfox 30-56; Waterfox Classic; Waterfox Current/G3/G4/G5;
 - Basilisk.
 
       **INSTALLATION**</br>
  about:config entries must be set before install:</br>
   <b>xpinstall.signatures.required = false</b></br>
   <b>extensions.legacy.enabled = true</b> – for Firefox <=73, Waterfox, Waterfox Classic, Waterfox Current</br>
-  <b>extensions.experiments.enabled = true</b> – for Firefox 74+, Waterfox G3</br>
+  <b>extensions.experiments.enabled = true</b> – for Firefox 74+, Waterfox G3/G4</br>
 
  \*1 In Firefox 48+ before installing Better FindButton, mandatory addon signature checking must be disabled (it doesn't affect Developer Edition and Nightly versions), and in Firefox 65+ ability of installing of bootstrap addons must be enabled. Instructions: https://github.com/xiaoxiaoflood/firefox-scripts#instructions
 
