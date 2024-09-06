@@ -1,6 +1,6 @@
 const Cu = Components.utils;
 
-Cu.import("resource://gre/modules/Services.jsm");
+const Services = globalThis.Services || Cu.import("resource://gre/modules/Services.jsm").Services;
 
 function startup(data,reason) {
 	forEachOpenWindow(plantrymodifyWindow);

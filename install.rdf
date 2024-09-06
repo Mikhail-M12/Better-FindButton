@@ -5,7 +5,7 @@
 
    <em:id>betterfindbutton@betterfindbutton.bfb</em:id>
    <em:name>Better FindButton</em:name>
-   <em:version>1.0.0.1</em:version>
+   <em:version>1.0.128</em:version>
    <em:description>Find Button will be able to open AND TO CLOSE findbar.</em:description>
    <em:creator>Mish12</em:creator>
    <em:type>2</em:type>
@@ -14,11 +14,11 @@
    <em:multiprocessCompatible>true</em:multiprocessCompatible>
    <em:homepageURL>https://github.com/Mikhail-M12/Better-FindButton</em:homepageURL>
 	
-   <em:targetApplication><!-- Firefox/Waterfox/Basilisk -->
+   <em:targetApplication><!-- Firefox/Waterfox/Basilisk/r3dfox -->
 	<Description>
 		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 		<em:minVersion>29.0</em:minVersion>
-		<em:maxVersion>*</em:maxVersion><!-- 94.0 - works -->
+		<em:maxVersion>*</em:maxVersion><!-- 128.2 - works -->
 	</Description>
    </em:targetApplication>
 
