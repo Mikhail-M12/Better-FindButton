@@ -22,7 +22,7 @@ English version of text is below.
   ６. Откройте about:support и кликните "Clear startup cache…" / "Очистить кэш запуска…".</br>
   ７. Перезапустите Firefox.
 
- Перед установкой Better FindButton разместите кнопку поиска на панели инструментов. Далее для установки скачайте <b>[xpi-файл](https://github.com/Mikhail-M12/Better-FindButton/releases/download/v1.0.153/betterfindbutton-1.0.153.xpi)</b> и откройте его в браузере.
+ Перед установкой Better FindButton разместите кнопку поиска на панели инструментов. Далее для установки скачайте <b>[xpi-файл](https://github.com/Mikhail-M12/Better-FindButton/releases/download/v1.0.153.2/betterfindbutton-1.0.153.2.xpi)</b> и откройте его в браузере.
 
 
 
@@ -43,4 +43,4 @@ Supported browsers:
 
  \*1 In Firefox 48+ before installing Better FindButton, mandatory addon signature checking must be disabled (it doesn't affect Developer Edition and Nightly versions), and in Firefox 65+ ability of installing of bootstrap addons must be enabled. Instructions: https://github.com/onemen/TabMixPlus#installation (old: https://github.com/xiaoxiaoflood/firefox-scripts#instructions )
 
- Before installing Better FindButton place find button onto toolbar. Then for installation download <b>[xpi-file](https://github.com/Mikhail-M12/Better-FindButton/releases/download/v1.0.153/betterfindbutton-1.0.153.xpi)</b> and open it in browser.
+ Before installing Better FindButton place find button onto toolbar. Then for installation download <b>[xpi-file](https://github.com/Mikhail-M12/Better-FindButton/releases/download/v1.0.153.2/betterfindbutton-1.0.153.2.xpi)</b> and open it in browser.

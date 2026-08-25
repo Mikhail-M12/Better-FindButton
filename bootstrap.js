@@ -3,9 +3,33 @@ const Cu = Components.utils;
 const Services = globalThis.Services || Cu.import("resource://gre/modules/Services.jsm").Services;
 
 function startup(data,reason) {
-	forEachOpenWindow(plantrymodifyWindow);
-	Services.ww.registerNotification(windowObserver);
+// --- WATERFOX 6.7.0 COLD START RUNTIME DELAY BRIDGE --- //thanks to Imold
+	let executeDelayedStartup = () => {
+		try {forEachOpenWindow(plantrymodifyWindow);
+		} catch (e) {
+			console.error("Better FindButton delayed initialization error: ", e);
+		}
+	};
+
+	// Determine if Waterfox is performing a cold boot vs a manual addon toggle
+	if (typeof Services !== "undefined" && Services.startup && Services.startup.startingUp) {
+		// Browser is starting cold: Wait for window architecture to settle completely
+		Services.obs.addObserver(function observer(subject, topic) {
+			if (topic === "browser-delayed-startup-finished") {
+				Services.obs.removeObserver(observer, "browser-delayed-startup-finished");
+
+				// Yield one more thread cycle to prevent early race conditions
+				Services.tm.dispatchToMainThread({
+					run: () => { executeDelayedStartup(); }
+				});
+			}
+		}, "browser-delayed-startup-finished");
+	} else {// Manual extension toggle or refresh: Windows are ready, execute immediately
+		executeDelayedStartup();
+	}
+	Services.ww.registerNotification(windowObserver);//This don't need to be delayed?
 }
+
 function shutdown(data,reason) {
 	if (reason == APP_SHUTDOWN)
 		return;
