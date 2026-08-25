@@ -37,22 +37,32 @@ else{//old browser
 function modifyWindow(window) {
 		let fb = window.document.getElementById("find-button");
 	if (fb != null){
+		if (fb.getAttribute("better") != null) return "mod";
 		fbClone = fb.cloneNode(true);
-		fb.parentElement.replaceChild(fbClone, fb);
+		fbClone.setAttribute("better",1);
 		fbClone.addEventListener("command", myfindBtnClick.bind(window));
+		fb.parentElement.replaceChild(fbClone, fb);//atomic(?)
 		delete fb;
 		fb = null;
-	}else console.log('Please place find button on toolbar and restart.');
+		return "mod";
+	}else {
+		if (window.document.documentElement.getAttribute("windowtype") == "navigator:browser")
+			console.log('Please place find button on toolbar and restart.');
+		return "no";
+	}
 }
 //function demodifyWindow(window) { }
 
 function plantrymodifyWindow(window) {
-	if (window.document.readyState != "complete"){
-		window.addEventListener("load", function runOnce() {
-			window.removeEventListener("load", runOnce, false);
-			if (window.document.documentElement.getAttribute("windowtype") == "navigator:browser") modifyWindow(window);
-		}, false);
-	} else if (window.document.documentElement.getAttribute("windowtype") == "navigator:browser") modifyWindow(window);
+	function runOnce() {
+		window.removeEventListener("load", runOnce, false);
+		modifyWindow(window);
+	}
+	window.addEventListener("load", runOnce, false);
+
+	if (modifyWindow(window) == "mod"){
+		window.removeEventListener("load", runOnce, false);
+	}
 }
 
 function forEachOpenWindow(todo){ //Apply a function to all open browser windows
@@ -64,6 +74,7 @@ function forEachOpenWindow(todo){ //Apply a function to all open browser windows
 }
 
 function windowObserver(wsubject, topic) {
-	if (topic == "domwindowopened")
+	if (topic == "domwindowopened") {
 		plantrymodifyWindow(wsubject);
+	}
 }
